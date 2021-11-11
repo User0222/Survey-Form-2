@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Форма приёма данных с AJAX</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="form">
+                <form action="" id="form" class="form-body">
+                    <h1 class="form-title">Survey Form 2</h1>
+                    <div class="form-item">
+                        <label for="formName" class="form-label">Ваше имя</label>
+                        <input id="formName" type="text" name="name" class="form-input _required" placeholder="Введите ваше имя">
+                    </div>
+                    <div class="form-item">
+                        <label for="formEmail" class="form-label">Ваш Email</label>
+                        <input id="formEmail" type="email" name="email" class="form-input _required _email" placeholder="Введите вашу почту">
+                    </div>
+                    <div class="form-item">
+                        <label for="formAge" class="form-label">Ваш возраст</label>
+                        <input id="formAge" min="1" max="110" type="number" name="age" class="form-input _required" placeholder="Введите ваш возраст">
+                    </div>
+                    <div class="form-item">
+                        <div class="form-label">Какой вариант лучше описывает ваш текущий статус?</div>
+                        <select class="form-select _required" name="role">
+                            <option value="student">Ученик</option>
+                            <option value="learner">Студент</option>
+                            <option value="working">Работающий</option>
+                            <option value="unemployed">Домохозяин</option>
+                            <option value="other">Другой вариант</option>
+                        </select>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-label">Порекомендуете ли Вы freeCodeCamp другу?</div>
+                        <div class="options-item _required">
+                            <input checked type="radio" value="certainly" name="recommends" id="formYes">
+                            <label for="formYes" class="options-label">Конечно</label>
+                            <br>
+                            <input type="radio" value="maybe" name="recommends" id="formMaybe">
+                            <label for="formMaybe" class="options-label">Может быть</label>
+                            <br>
+                            <input type="radio" value="not-sure" name="recommends" id="formNo">
+                            <label for="formNo" class="options-label">Не уверен</label>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-label">Что бы Вы хотели улучшить?</div>
+                        <div class="options-item">
+                            <input type="checkbox" value="front-end" name="improvements" id="formFrontEnd">
+                            <label for="formFrontEnd" class="options-label">"Проекты Front-end"</label>
+                        </div>
+                        <div class="options-item">
+                            <input type="checkbox" value="back-end" name="improvements" id="formBackEnd">
+                            <label for="formBackEnd" class="options-label">"Проекты Back-end"</label>
+                        </div>
+                        <div class="options-item">
+                            <input type="checkbox" value="data-vis" name="improvements" id="formDataVis">
+                            <label for="formDataVis" class="options-label">"Визуализация данных"</label>
+                        </div>
+                        <div class="options-item">
+                            <input type="checkbox" value="open-source" name="improvements" id="formOpenSource">
+                            <label for="formOpenSource" class="options-label">"Открытый исходный код"</label>
+                        </div>
+                        <div class="options-item">
+                            <input type="checkbox" value="city-meet" name="improvements" id="formCityMeet">
+                            <label for="formCityMeet" class="options-label">"Городские встречи"</label>
+                        </div>
+                        <div class="options-item">
+                            <input type="checkbox" value="wiki" name="improvements" id="formWiki">
+                            <label for="formWiki" class="options-label">"Вики"</label>
+                        </div>
+                        <div class="options-item">
+                            <input type="checkbox" value="additional-courses" name="improvements" id="formCourses">
+                            <label for="formCourses" class="options-label">"Дополнительные курсы"</label>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="formMessage" class="form-label">Есть пожелания или комментарий?</label>
+                        <textarea name="message" id="formMessage" class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="form-button">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>    
+</html>

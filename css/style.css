@@ -1,0 +1,109 @@
+.form-input {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-style: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	font-style: 14px;
+	background-color: white;
+	font-family: "Helvetica Neue", Tahoma, sans-serif;
+}
+
+.form {
+	max-width: 600px;
+	margin: 0 auto;
+	color: azure;
+	padding: 20px 30px;
+	background: linear-gradient(-45deg, rgb(18, 112, 167), rgb(50, 172, 212));
+	border-radius: 10px;
+}
+
+.form-body._sending {
+	background: black;
+}
+
+.form-title {
+	font-size: 40px;
+	font-weight: 700;
+	margin: 0 0 30px 0;
+}
+.form-item {
+	margin: 0 0 20px 0;
+}
+.form-label {
+	font-size: 18px;
+	display: block;
+	margin: 0 0 15px 0;
+}
+.form-input {
+	height: 40px;
+	padding: 0 20px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 14px;
+}
+
+.form-input._error {
+	box-shadow: 0 0 10px rgb(252, 214, 0);
+}
+
+textarea.form-input {
+	min-height: 100px;
+	resize: vertical;
+	padding: 10px 20px;
+}
+
+.options-item {
+	padding: 10px 0;
+}
+.options-label {
+	font-size: 15px;
+}
+.form-select {
+	width: 300px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+.form-button {
+	height: 45px;
+	width: 100%;
+	margin: auto;
+	border: none;
+	border-radius: 5px;
+	background-color: darkmagenta;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	transition: background-color 0.5s ease 0s;
+}
+.form-button:hover {
+	background-color: rgb(221, 0, 221);
+	font-size: 15px;
+}
